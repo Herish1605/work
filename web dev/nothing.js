@@ -1,10 +1,18 @@
-zconsole.log(console);
-console.warn("this is the warning");
-console.context("what the hell is wrong with you");
+let age = prompt("Enter your age");
+age = Number.parseInt(age);  
 
-let a= 34;
-let b=56;
-let c= 89;
+let runAgain = true;
 
-let d=console.count(a+b+c);
-console.countReset(a+b+c);
+while(runAgain){
+    const canDrive = (age) =>{
+        return age>=18 ? true : false
+    }
+    if(canDrive(age)){
+        alert("yes you can drive");
+    }
+    else{
+        alert("you cannot drive"); 
+    }
+    runAgain= confirm("Do you want to play again?");
+}
+
