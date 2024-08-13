@@ -11,7 +11,7 @@ interface Recyclable {
 class Fabric implements Recyclable {
     @Override
     public void recycle() {
-        System.out.println("Fabric recycled...");
+        System.out.println("Fabric recycled...................");
     }
 
     @Override
@@ -20,7 +20,7 @@ class Fabric implements Recyclable {
     }
 }
 
-class Bottle implements Recyclable {
+class Bottle implements Recyclable { 
     @Override
     public void recycle() {
         System.out.println("Bottle recycled...");
