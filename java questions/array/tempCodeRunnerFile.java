@@ -1,0 +1,1 @@
+linearsearch(int arr[], int key)
