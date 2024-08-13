@@ -11,12 +11,12 @@ interface Recyclable {
 class Fabric implements Recyclable {
     @Override
     public void recycle() {
-        System.out.println("fabrics recycled...");
+        System.out.println("Fabric recycled...");
     }
 
     @Override
     public String toString() {
-        return "fabrics";
+        return "Fabric";
     }
 }
 
@@ -61,7 +61,6 @@ public class RecyclingProgram {
             int choice = scanner.nextInt();
             if (choice == 4) {
                 System.out.println("Thanks for coming...");
-                
                 break;
             } else if (choice >= 1 && choice <= 3) {
                 recyclables[choice - 1].recycle();
@@ -69,6 +68,6 @@ public class RecyclingProgram {
                 recyclables[0].Input();
             }
         }
-        scanner.close();         
+        scanner.close();
     }
 }
